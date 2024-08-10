@@ -34,3 +34,52 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+
+
+
+
+
+
+<!-- ------------------------------------------------------ -->
+
+1. Create Next App:
+    - npx create-next-app@latest
+    - then create .env & .env.sample in root directory.
+
+2. Go to 'Appwrite' App:
+
+    - Create project 'QuestForge'
+    - Choose 'Region'
+    - Copy 'NEXT_PUBLIC_APPWRITE_PROJECT_ID' & paste it in .env
+    
+    - Add the platform 'Web'
+    
+    - Settings -> Hostname Registration:
+        + Name: 'QuestForge'
+        + Hostname: 'localhost'          //if want to host on vercel select '*.vercel.app' otherwise it give error
+
+    - Install:
+        + Install the 'Appwrite' package: npm install appwrite
+        + Hostname: 'localhost'          //if want to host on vercel select '*.vercel.app' otherwise it give error
+
+    - Import -> Initialize SDK:
+        + NEXT_PUBLIC_APPWRITE_HOST_URL: 'https://cloud.appwrite.io/v1'          //from .setEndpoint
+
+    - Build -> All Set:
+        + Go to the Dashboard
+
+    - Create the Api Keys: Integrations -> API Keys -> Create API Keys
+        + Details -> Name: 'Keyone', Expiration Date: 'Never'
+        + Scope -> Select All (Auth, Database, Functions, Storage, Messaging) for now.
+
+    - From Keyone:
+        + Copy API Secret Keys
+        + Paste it in .env file
+
+    - Finally, 'Appwrite' settings were all done.
+
+3. Create variables in .env file (requirement from Next.js)
+    - 
+
