@@ -27,6 +27,17 @@ This README.md file created understand the sub-directory structure inside 'src' 
     names in a single location.
 
 
+4. config.ts (src/models/client/config.ts)
+    - Get Code template for Account API from -> https://appwrite.io/docs/products/auth/accounts
+    - install the package:
+        - npm install node-appwrite --save
+    - This script is created to configure and initialize the Appwrite client and its services. 
+       It centralizes the setup of the Appwrite client with your API endpoint and project ID, 
+       and it creates instances of Appwrite services (Account, Databases, Avatars, Storage) 
+       that can be used throughout the client-side of your application.
+
+
+
 
 
 
