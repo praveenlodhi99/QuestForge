@@ -20,6 +20,30 @@ This README.md file created understand the sub-directory structure inside 'src' 
         // if the collection is there we don't do anything but if application is deployed for the very first time, we are able to structure the collection automatically, for that we are using 'dbSetup.ts' (seeding database here).
         // we are allowing user to upload the images via Appwrite, we don't want to use any third party app for that so that we are creating 'storage.collection.ts'
 
+3. 'name.ts' (src/models/server/name.ts)
+    - This script is created to define and centralize the names of the database, 
+    collections, and storage buckets used in the project. By doing so, it ensures 
+    consistency across the project and makes it easier to manage and update these 
+    names in a single location.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
