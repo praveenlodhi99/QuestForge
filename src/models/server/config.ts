@@ -23,11 +23,11 @@ client
 
 // Create instances of Appwrite services for interacting with the Appwrite API on the server-side
 const users = new Users(client); // Manages user accounts (e.g., creation, update, deletion)
-const database = new Databases(client); // Provides access to Appwrite databases (CRUD operations)
+const databases = new Databases(client); // Provides access to Appwrite databases (CRUD operations)
 const avatars = new Avatars(client); // Allows retrieval and manipulation of user avatars
 const storage = new Storage(client); // Manages file storage (upload, download, etc.)
 
 // Export the initialized instances to use them throughout your server-side application
-export { client, database, users, avatars, storage };
+export { client, databases, users, avatars, storage };
 
 
