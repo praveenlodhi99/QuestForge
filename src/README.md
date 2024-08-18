@@ -38,6 +38,25 @@ This README.md file created understand the sub-directory structure inside 'src' 
 
 
 
+<!--  -->
+
+5. Setup Zustand (state-management library)
+    - npm i zustand
+    - npm install immer
+
+    /*
+    intergration used -> immer middleware & persisting store data
+    */
+
+    - steps involved: 
+        + imports
+        + interface definations
+        + zustland store (immer, persist)
+        + store data & methods
+        + Rehydration
+
+
+
 
 
 
